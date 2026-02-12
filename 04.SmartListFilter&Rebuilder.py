@@ -6,7 +6,7 @@ number_list=[0]*n
 string_list=[0]*n
 for i in range(n):
     lists[i]= input("Enter the list content:")
-    if lists[i]==' ':
+    if lists[i]=='':
         continue
     if lists[i].isdigit():
         number_list[number_count]=int(lists[i])
