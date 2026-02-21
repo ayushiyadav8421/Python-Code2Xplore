@@ -27,6 +27,11 @@ if not invalid:
     print("Total Duration:", total_duration, "seconds")
     print("Songs:", len_playlist)
 
+    #Personalized logic
+    avg_duration = total_duration / len_playlist
+    if avg_duration > 400:
+        print("Personal insight: You seem to prefer long songs! ")
+
     if total_duration < 300:
         print("Category: Too Short Playlist")
         print("Recommendation: Add more songs")
